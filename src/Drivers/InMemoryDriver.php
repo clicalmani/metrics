@@ -47,9 +47,7 @@ final class InMemoryDriver implements MetricsDriver
 
     public function flush(): void
     {
-        $this->counters = [];
-        $this->gauges   = [];
-        $this->timings  = [];
+        // Rien à faire — tout est déjà en mémoire.
     }
 
     private function key(string $key, array $tags): string

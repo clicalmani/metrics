@@ -5,11 +5,22 @@
     "require": {
         "php": ">=8.3"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "Clicalmani\\Metrics\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Clicalmani\\Metrics\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
     },
     "authors": [
         {

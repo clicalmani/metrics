@@ -29,5 +29,7 @@ final class LogDriver implements MetricsDriver
     }
 
     public function all(): array { return []; }
-    public function flush(): void {}
+    public function flush(): void {
+        // Rien à faire — chaque appel écrit directement dans le log.
+    }
 }
