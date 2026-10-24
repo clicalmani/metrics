@@ -7,7 +7,7 @@
          failOnWarning="true"
          cacheDirectory=".phpunit.cache">
     <testsuites>
-        <testsuite name="default">
+        <testsuite name="Metrics">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

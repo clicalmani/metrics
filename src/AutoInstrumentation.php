@@ -45,7 +45,7 @@ final class AutoInstrumentation
 
             $tags = [
                 'method' => $request->getMethod(),
-                'route'  => $request->route()->name,
+                'route'  => $request->route()?->name,
                 'status' => app()->response->getStatusCode(),
             ];
 
